@@ -1,23 +1,23 @@
-# 🌌 IA para Identificar Estrellas y Descubrir Galaxias
+# AI to Identify Stars and Discover Galaxies
 
-Este proyecto es un **prototipo educativo** que demuestra cómo usar **datos reales del satélite Gaia** y técnicas básicas de **machine learning** para:
+This project is an educational prototype that demonstrates how to use real data from the Gaia satellite and basic machine learning techniques to:
 
-1. Descargar y limpiar datos astronómicos reales.
-2. Entrenar una IA sencilla que clasifica estrellas por tipo (azul/roja como ejemplo didáctico).
-3. Visualizar la estructura de la Vía Láctea (diagrama color–magnitud).
-4. Detectar anomalías que podrían indicar galaxias o cúmulos nuevos.
+1. Download and clean real astronomical data.
+2. Train a simple AI model to classify stars by type (blue/red as a didactic example).
+3. Visualize the structure of the Milky Way (color–magnitude diagram).
+4. Detect anomalies that could indicate new galaxies or stellar clusters.
 
-> 🧠 Diseñado para personas con poco conocimiento técnico en programación.
-> 📡 Usa datos reales de la misión **Gaia DR3** (ESA).
+Designed for people with little technical programming knowledge.
+Uses real data from the Gaia DR3 mission (ESA).
 
 ---
 
-## 🧭 Requisitos
+## Requirements
 
-- Python **3.9+**
-- Conexión a internet (para descargar los datos)
+* Python 3.9+
+* Internet connection (to download data)
 
-### 📦 Instalación rápida
+### Quick installation
 
 ```bash
 pip install -r requirements.txt
@@ -25,48 +25,54 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Cómo usar
+## How to Use
 
-1) **Descargar datos de Gaia** (limita a 50k filas para ser rápido):
+1. Download Gaia data (limited to 50k rows for speed):
+
 ```bash
 python src/descargar_datos.py
 ```
 
-2) **Preparar/limpiar datos** (calcula magnitud absoluta y filtra nulos):
+2. Prepare/Clean data (compute absolute magnitude and filter nulls):
+
 ```bash
 python src/preparar_datos.py
 ```
 
-3) **Entrenar IA sencilla** (clasifica estrellas azul/roja con LightGBM):
+3. Train a simple AI model (classifies blue/red stars using LightGBM):
+
 ```bash
 python src/entrenar_modelo.py
 ```
 
-4) **Visualizar la Vía Láctea** (diagrama color–magnitud):
+4. Visualize the Milky Way (color–magnitude diagram):
+
 ```bash
 python src/graficar_vialactea.py
 ```
 
-5) **Detectar anomalías** (potenciales estructuras inusuales):
+5. Detect anomalies (potential unusual structures):
+
 ```bash
 python src/detectar_anomalias.py
 ```
 
-> Alternativa: abrir el notebook interactivo (recomendado para principiantes):
+Alternatively, open the interactive notebook (recommended for beginners):
+
 ```bash
-jupyter notebook notebooks/01_prototipo_completo.ipynb
+jupyter notebook notebooks/01_prototype_complete.ipynb
 ```
 
 ---
 
-## 📁 Estructura
+## Structure
 
 ```
-ia-estrellas-galaxias/
-├── data/                     # Archivos descargados/procesados
+ia-stars-galaxies/
+├── data/                     # Downloaded/processed files
 │   └── README.md
 ├── notebooks/
-│   └── 01_prototipo_completo.ipynb
+│   └── 01_prototype_complete.ipynb
 ├── src/
 │   ├── descargar_datos.py
 │   ├── preparar_datos.py
@@ -80,15 +86,15 @@ ia-estrellas-galaxias/
 
 ---
 
-## 🛰️ Fuentes de datos
+## Data Sources
 
-- Gaia Archive (ESA): https://gea.esac.esa.int/archive/
-- SDSS SkyServer: http://skyserver.sdss.org/
-- LAMOST DR9: http://dr9.lamost.org/
-- DESI Legacy Surveys: https://www.legacysurvey.org/
+* Gaia Archive (ESA): [https://gea.esac.esa.int/archive/](https://gea.esac.esa.int/archive/)
+* SDSS SkyServer: [http://skyserver.sdss.org/](http://skyserver.sdss.org/)
+* LAMOST DR9: [http://dr9.lamost.org/](http://dr9.lamost.org/)
+* DESI Legacy Surveys: [https://www.legacysurvey.org/](https://www.legacysurvey.org/)
 
 ---
 
-## 📜 Licencia
+## License
 
-Código bajo licencia **MIT**. Los datos científicos están sujetos a las licencias y créditos de sus respectivas misiones/consorcios.
+Code under the MIT License. Scientific data are subject to the licenses and credits of their respective missions/consortia.
