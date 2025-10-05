@@ -1,0 +1,6 @@
+astroquery
+astropy
+pandas
+lightgbm
+scikit-learn
+matplotlib
